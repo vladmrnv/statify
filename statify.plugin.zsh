@@ -1,4 +1,5 @@
 function bc_convert {
   echo "$@" | bc -l
 }
-alias calc="bc_convert" 
+alias calc="bc_convert"
+#Matt's comment
