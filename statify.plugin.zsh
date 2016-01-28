@@ -18,4 +18,10 @@ function median {
   echo  $@ | xargs -n1 | sort -n | sed -n $((($#+1)/2))p
 }
 
+# Mean function
+function pytest {
+  test=$(python -c "print 2+2")
+  echo $test
+}
+
 alias calc="bc_convert"
