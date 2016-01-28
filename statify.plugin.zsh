@@ -19,9 +19,11 @@ function median {
 }
 
 # Mean function
-function pytest {
-  test=$(python -c "print 2+2")
-  echo $test
+function mean {
+  # need to figure out how to take these from stdin and convert them to array
+  test_nums=[1,2,3,4,5]
+  mean=$(python -c "print(sum($test_nums) / len($test_nums))")
+  echo $mean
 }
 
 alias calc="bc_convert"
